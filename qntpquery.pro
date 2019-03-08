@@ -6,7 +6,7 @@
 
 QT       += core gui widgets network
 
-TARGET = ntptest
+TARGET = qntpquery
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -23,20 +23,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
+        src/main.cpp \
+        src/mainwindow.cpp \
     networktimestamp/ntpclient.cpp \
     networktimestamp/networktimestamp.cpp \
     networktimestamp/localtimedaemon.cpp
 
 HEADERS += \
-        mainwindow.h \
+        src/mainwindow.h \
     networktimestamp/ntpclient.h \
     networktimestamp/networktimestamp.h \
     networktimestamp/localtimedaemon.h
 
 FORMS += \
-        mainwindow.ui
+        src/mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
