@@ -1,6 +1,8 @@
 #include "ntpclient.h"
 #include <QDateTime>
+#if defined(Q_OS_MAC)
 #include <mach/mach_time.h>
+#endif
 #include <QTimer>
 
 namespace {
